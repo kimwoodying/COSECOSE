@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS 파일 연결 -->
+</head>
+<body>
+
+<div class="signup-form">
+    <h2>회원가입</h2>
+    <form id="registerForm">
+        <div class="form-group">
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" placeholder="이메일" required>
+            <button type="button" id="emailCheckButton">중복 확인</button>
+            <button type="button" id="emailVerifyButton">이메일 인증</button>
+            <input type="text" id="emailCode" name="emailCode" placeholder="인증 코드" style="display:none;">
+            <button type="button" id="emailCodeVerifyButton" style="display:none;">코드 확인</button>
+        </div>
+
+        <div class="form-group">
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" placeholder="비밀번호" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">비밀번호 확인:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="비밀번호 확인" required>
+            <span id="passwordError" style="color: red; display: none;">비밀번호가 일치하지 않습니다.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">전화번호:</label>
+            <input type="tel" id="phone" name="phone" placeholder="전화번호" required>
+            <button type="button" id="phoneVerifyButton">전화번호 인증</button>
+            <input type="text" id="phoneCode" name="phoneCode" placeholder="인증 코드" style="display:none;">
+            <button type="button" id="phoneCodeVerifyButton" style="display:none;">코드 확인</button>
+        </div>
+
+        <div class="form-group">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" placeholder="이름" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">생년월일:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nickname">닉네임:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="닉네임" required>
+        </div>
+        <div class="form-group">
+            <label for="location">거주지역:</label>
+            <input type="text" id="location" name="location" placeholder="거주지역" required>
+        </div>
+        
+        <!-- 성별 -->
+        <div class="form-group">
+            <label>성별:</label>
+            <div class="radio-group">
+                <label for="gender-m">
+                    <input type="radio" id="gender-m" name="gender" value="M" required> 남성
+                </label>
+                <label for="gender-f">
+                    <input type="radio" id="gender-f" name="gender" value="F"> 여성
+                </label>
+            </div>
+        </div>
+
+        <!-- 음식 취향 -->
+        <div class="form-group">
+            <label for="food-preferences">음식 취향:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="korean" name="food-preferences" value="한식">
+                <label for="korean">한식</label>
+                <input type="checkbox" id="chinese" name="food-preferences" value="중식">
+                <label for="chinese">중식</label>
+                <input type="checkbox" id="western" name="food-preferences" value="양식">
+                <label for="western">양식</label>
+                <input type="checkbox" id="japanese" name="food-preferences" value="일식">
+                <label for="japanese">일식</label>
+            </div>
+        </div>
+
+        <!-- 관람 취향 -->
+        <div class="form-group">
+            <label for="entertainment-preferences">관람 취향:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="movie" name="entertainment-preferences" value="영화">
+                <label for="movie">영화</label>
+                <input type="checkbox" id="play" name="entertainment-preferences" value="연극">
+                <label for="play">연극</label>
+                <input type="checkbox" id="musical" name="entertainment-preferences" value="뮤지컬">
+                <label for="musical">뮤지컬</label>
+                <input type="checkbox" id="exhibition" name="entertainment-preferences" value="전시회">
+                <label for="exhibition">전시회</label>
+            </div>
+        </div>
+
+        <!-- 카페 취향 -->
+        <div class="form-group">
+            <label for="cafe-preferences">카페 취향:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="dog-cafe" name="cafe-preferences" value="애견카페">
+                <label for="dog-cafe">애견카페</label>
+                <input type="checkbox" id="board-game-cafe" name="cafe-preferences" value="보드게임카페">
+                <label for="board-game-cafe">보드게임카페</label>
+                <input type="checkbox" id="room-cafe" name="cafe-preferences" value="룸카페">
+                <label for="room-cafe">룸카페</label>
+                <input type="checkbox" id="ye-cafe" name="cafe-preferences" value="예카">
+                <label for="ye-cafe">예카</label>
+                <input type="checkbox" id="roomexcape-cafe" name="cafe-preferences" value="방탈출">
+                <label for="roomexcape-cafe">방탈출카페</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">가입하기</button>
+        </div>
+    </form>
+</div>
+
+<script src="app.js"></script> <!-- 자바스크립트 파일 연결 -->
+</body>
+</html>
