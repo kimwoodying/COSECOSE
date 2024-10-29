@@ -47,7 +47,7 @@
 
 .radio-group {
     display: flex;
-    gap: 15px; /* 라디오 버튼 간의 간격 */
+    gap: 15px; /* 라디오 버튼 간의 간격 */ 
 }
 
 /* 체크박스 크기 통일 */

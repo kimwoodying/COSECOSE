@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel="stylesheet" th:href="@{/home_css/login_form.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/home_css/sign_form.css}" type="text/css">
 
 </head>
 <body>
@@ -43,7 +43,10 @@
             <label for="name">이름:</label>
             <input type="text" id="name" name="name" placeholder="이름" required>
         </div>
-
+        <div class="form-group">
+            <label for="nickname">닉네임:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="닉네임" required>
+        </div>
         <div class="form-group">
             <label for="dob">생년월일:</label>
             
@@ -91,10 +94,7 @@
         </div>
         
 
-        <div class="form-group">
-            <label for="nickname">닉네임:</label>
-            <input type="text" id="nickname" name="nickname" placeholder="닉네임" required>
-        </div>
+
         <div class="form-group">
             <label for="location">거주지역:</label>
             <input type="text" id="location" name="location" placeholder="거주지역" required>
@@ -113,52 +113,6 @@
             </div>
         </div>
 
-        <!-- 음식 취향 -->
-        <div class="form-group">
-            <label for="food-preferences">음식 취향:</label>
-            <div class="checkbox-group">
-                <input type="checkbox" id="korean" name="food-preferences" value="한식">
-                <label for="korean">한식</label>
-                <input type="checkbox" id="chinese" name="food-preferences" value="중식">
-                <label for="chinese">중식</label>
-                <input type="checkbox" id="western" name="food-preferences" value="양식">
-                <label for="western">양식</label>
-                <input type="checkbox" id="japanese" name="food-preferences" value="일식">
-                <label for="japanese">일식</label>
-            </div>
-        </div>
-
-        <!-- 관람 취향 -->
-        <div class="form-group">
-            <label for="entertainment-preferences">관람 취향:</label>
-            <div class="checkbox-group">
-                <input type="checkbox" id="movie" name="entertainment-preferences" value="영화">
-                <label for="movie">영화</label>
-                <input type="checkbox" id="play" name="entertainment-preferences" value="연극">
-                <label for="play">연극</label>
-                <input type="checkbox" id="musical" name="entertainment-preferences" value="뮤지컬">
-                <label for="musical">뮤지컬</label>
-                <input type="checkbox" id="exhibition" name="entertainment-preferences" value="전시회">
-                <label for="exhibition">전시회</label>
-            </div>
-        </div>
-
-        <!-- 카페 취향 -->
-        <div class="form-group">
-            <label for="cafe-preferences">카페 취향:</label>
-            <div class="checkbox-group">
-                <input type="checkbox" id="dog-cafe" name="cafe-preferences" value="애견카페">
-                <label for="dog-cafe">애견카페</label>
-                <input type="checkbox" id="board-game-cafe" name="cafe-preferences" value="보드게임카페">
-                <label for="board-game-cafe">보드게임카페</label>
-                <input type="checkbox" id="room-cafe" name="cafe-preferences" value="룸카페">
-                <label for="room-cafe">룸카페</label>
-                <input type="checkbox" id="ye-cafe" name="cafe-preferences" value="예카">
-                <label for="ye-cafe">예카</label>
-                <input type="checkbox" id="roomexcape-cafe" name="cafe-preferences" value="방탈출">
-                <label for="roomexcape-cafe">방탈출카페</label>
-            </div>
-        </div>
 
         <div class="form-group">
             <button type="submit">가입하기</button>
